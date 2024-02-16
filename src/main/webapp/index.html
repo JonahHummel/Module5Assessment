@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Enter Your Expenses!</title>
+</head>
+<body>
+<h1>Expense Tracker</h1>
+
+<form action = "addExpenseServlet" method="post">
+	Expense: <input type="text" name = "expense"> <br>
+	Amount: <input type="number" name ="amount"> <br>
+	Frequency:
+	<select name="frequency">
+		<option value="anually">Annually</option>
+		<option value="monthly">Monthly</option>
+		<option value="weekly">Weekly</option>
+	</select><br>
+	<input type="submit" value="Submit">
+</form> 
+
+<br/>
+
+<a href ="viewExpenseReportServlet">Expense Report</a>
+
+</body>
+</html>
